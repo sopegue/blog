@@ -1,0 +1,258 @@
+<template>
+  <div class="min-w-90 h-512">
+    <div v-show="loading"></div>
+    <div v-show="!loading" class="sopegue max-w-460 mx-auto w-full h-full">
+      <Header />
+      <div class="sm:px-8 px-4">
+        <nuxt-child keep-alive :keep-alive-props="{ max: 10 }" />
+      </div>
+      <Footer />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    loading() {
+      return this.$store.state.domloading === true
+    },
+  },
+  watch: {
+    loading(nv, ov) {
+      if (!nv) {
+        this.checkDarkMode()
+      }
+    },
+  },
+  beforeMount() {
+    // this.checkDarkMode()
+    window.addEventListener('DOMContentLoaded', this.domload, false)
+  },
+  beforeDestroy() {
+    window.removeEventListener('DOMContentLoaded', this.domload, false)
+  },
+  methods: {
+    domload() {
+      this.$store.commit('set_Domload', false)
+    },
+    async checkDarkMode() {
+      if (localStorage.mode) {
+        const data = await localStorage.getItem('mode')
+        if (data === 'light') {
+          document.body.style.background = '#fff'
+          let sel = document.querySelectorAll('.header')
+          sel.forEach((element) => {
+            element.classList.add('header-light')
+          })
+          let sel1 = document.querySelectorAll('.sub-menu')
+          sel1.forEach((element) => {
+            element.classList.add('sub-menu-light')
+          })
+          let sel2 = document.querySelectorAll('.col-white')
+          sel2.forEach((element) => {
+            element.classList.add('col-gray')
+          })
+          let sel3 = document.querySelectorAll('.sombre-btn')
+          sel3.forEach((element) => {
+            element.classList.add('light-btn')
+          })
+          let sel4 = document.querySelectorAll('.sombre-fa')
+          sel4.forEach((element) => {
+            element.classList.add('light-fa')
+          })
+          let sel5 = document.querySelectorAll('.sombre-text')
+          sel5.forEach((element) => {
+            element.classList.add('light-text')
+          })
+
+          setTimeout(() => {
+            sel = document.querySelectorAll('.header-light')
+            sel.forEach((element) => {
+              element.classList.remove('header')
+            })
+            sel1 = document.querySelectorAll('.sub-menu-light')
+            sel1.forEach((element) => {
+              element.classList.remove('sub-menu')
+            })
+            sel2 = document.querySelectorAll('.col-gray')
+            sel2.forEach((element) => {
+              element.classList.remove('col-white')
+            })
+            sel3 = document.querySelectorAll('.light-btn')
+            sel3.forEach((element) => {
+              element.classList.remove('sombre-btn')
+            })
+            sel4 = document.querySelectorAll('.light-fa')
+            sel4.forEach((element) => {
+              element.classList.remove('sombre-fa')
+            })
+            sel5 = document.querySelectorAll('.light-text')
+            sel5.forEach((element) => {
+              element.classList.remove('sombre-text')
+            })
+          }, 100)
+        }
+      } else {
+        localStorage.setItem('mode', 'dark')
+      }
+    },
+  },
+}
+</script>
+
+<style>
+.indie {
+  font-family: Indie Flower;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #09232f;
+}
+.header {
+  background-color: #09232f !important;
+  border-color: white !important;
+}
+.header-light {
+  background-color: white !important;
+  border-color: #e2e8f0 !important;
+}
+.sub-menu {
+  background-color: #09232f !important;
+  animation: 0.2s appearx !important;
+  border-color: white !important;
+}
+.sub-menu-light {
+  background-color: #fff !important;
+  animation: 0.2s appearx !important;
+  border-color: #e2e8f0 !important;
+}
+.border-sombre {
+  border-color: #fff !important;
+}
+.border-light {
+  border-color: #e2e8f0 !important;
+}
+button:focus,
+button:active,
+.button:focus,
+.button:active {
+  outline: 0px solid transparent !important;
+  outline-offset: 0px !important;
+  border-color: inherit !important;
+  box-shadow: none !important;
+}
+
+.col-white {
+  color: white !important;
+}
+.col-gray {
+  color: #09232f !important;
+}
+.sombre-btn,
+.sombre-text {
+  color: #fff !important;
+}
+.light-btn,
+.light-text {
+  color: #09232f !important;
+}
+
+.sombre-fa .fab {
+  color: #fff !important;
+}
+.light-fa .fab {
+  color: #09232f !important;
+}
+
+.sombre-btn:hover {
+  color: #09232f !important;
+  background-color: rgb(255, 255, 255) !important;
+  animation: 0.2s appear !important;
+}
+.sombre-fa:hover {
+  background-color: rgb(255, 255, 255) !important;
+  animation: 0.2s appear !important;
+}
+.sombre-fa:hover .fab {
+  color: #09232f !important;
+}
+
+.light-btn:hover {
+  color: #fff !important;
+  background-color: #09232f !important;
+  animation: 0.2s appear !important;
+}
+.light-fa:hover {
+  background-color: #09232f !important;
+  animation: 0.2s appear !important;
+}
+.light-fa:hover .fab {
+  color: #fff !important;
+}
+
+.sombre-text:hover,
+.sombre-text:focus {
+  color: white !important;
+}
+.light-text:hover,
+.light-text:focus {
+  color: #09232f !important;
+}
+.w-fit {
+  width: intrinsic !important; /* Safari/WebKit utilisent un nom non-standard */
+  width: -moz-max-content !important; /* Firefox/Gecko */
+  width: -webkit-max-content !important;
+}
+@media screen and (max-width: 820px) {
+  .bar1 {
+    display: none;
+  }
+  .bar2i {
+    display: none;
+  }
+  .bar4i {
+    display: none;
+  }
+  .bar3 {
+    display: block;
+  }
+}
+@media screen and (min-width: 821px) {
+  .sub-menu {
+    display: none;
+  }
+  .sub-menu-light {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bar2 {
+    display: none !important;
+  }
+  .bar2s {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .bar4 {
+    display: none !important;
+  }
+  .bar4s {
+    display: flex !important;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes appearx {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+</style>
