@@ -33,6 +33,13 @@
               >Projects</a
             >
           </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm button border-none bg-transparent no-outlines sombre-btn"
+              >Achievements</a
+            >
+          </li>
         </ul>
         <ul class="flex items-center bar2">
           <li>
@@ -168,6 +175,13 @@
               href="/"
               class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
               >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm button border-none bg-transparent no-outlines sombre-btn"
+              >Achievements</a
             >
           </li>
         </ul>

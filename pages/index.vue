@@ -205,7 +205,7 @@ button:active,
   width: -moz-max-content !important; /* Firefox/Gecko */
   width: -webkit-max-content !important;
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 930px) {
   .bar1 {
     display: none;
   }
@@ -219,7 +219,7 @@ button:active,
     display: block;
   }
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 931px) {
   .sub-menu {
     display: none;
   }
