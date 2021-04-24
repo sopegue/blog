@@ -22,7 +22,6 @@ export default {
     loading(nv, ov) {
       if (!nv) {
         this.checkDarkMode()
-        console.log('loaded')
       }
     },
   },

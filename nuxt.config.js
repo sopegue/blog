@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  target: 'static',
+
   head: {
     title:
       "Hey, I'm Sopegue, developer, student, son of Salimata Yeo and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
