@@ -65,7 +65,7 @@
         <div class="flex items-center space-x-5">
           <div class="hireme bar4">
             <a
-              hrefF="/hireme"
+              href="/hireme"
               class="text-sm button no-outlines bg-transparent sombre-text"
             >
               Hire me
