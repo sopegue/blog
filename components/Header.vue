@@ -374,7 +374,7 @@ export default {
             setTimeout(() => {
               this.dark = true
               document.body.style.animation = 'appear 0.3s'
-              document.body.style.background = '#09232f'
+              document.body.style.background = '#1f2937'
               let sel = document.querySelectorAll('.header-light')
               sel.forEach((element) => {
                 element.classList.add('header')
