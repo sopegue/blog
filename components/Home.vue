@@ -1,5 +1,24 @@
 <template>
-  <div class="relative w-full py-10"></div>
+  <div class="relative w-full py-10">
+    <div class="flex flex-col space-y-5">
+      <div class="flex h-fit">
+        <div class="flex flex-col">
+          <span></span>
+          <div></div>
+          <span></span>
+        </div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </template>
 
 <script>
