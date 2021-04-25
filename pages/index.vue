@@ -3,6 +3,7 @@
     <div v-show="loading"></div>
     <div v-show="!loading" class="sopegue max-w-460 mx-auto w-full h-full">
       <Header />
+      <Afterheader />
       <div class="sm:px-8 px-4">
         <nuxt-child keep-alive :keep-alive-props="{ max: 10 }" />
       </div>
