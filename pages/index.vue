@@ -206,6 +206,11 @@ button:active,
   width: -moz-max-content !important; /* Firefox/Gecko */
   width: -webkit-max-content !important;
 }
+.h-fit {
+  height: -moz-max-content !important;
+  height: -webkit-max-content !important;
+  height: intrinsic !important;
+}
 @media screen and (max-width: 930px) {
   .bar1 {
     display: none;
