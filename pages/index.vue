@@ -3,8 +3,8 @@
     <div v-show="loading"></div>
     <div v-show="!loading" class="sopegue max-w-460 mx-auto w-full h-full">
       <Header />
-      <Afterheader />
-      <Home />
+      <Afterheader v-if="$route.path === '/'" />
+      <Home v-if="$route.path === '/'" />
       <div class="sm:px-8 px-4">
         <nuxt-child />
       </div>
@@ -43,57 +43,59 @@ export default {
         const data = await localStorage.getItem('mode')
         if (data === 'light') {
           document.body.style.background = '#fff'
-          let sel = document.querySelectorAll('.header')
-          sel.forEach((element) => {
-            element.classList.add('header-light')
-          })
-          let sel1 = document.querySelectorAll('.sub-menu')
-          sel1.forEach((element) => {
-            element.classList.add('sub-menu-light')
-          })
-          let sel2 = document.querySelectorAll('.col-white')
-          sel2.forEach((element) => {
-            element.classList.add('col-gray')
-          })
-          let sel3 = document.querySelectorAll('.sombre-btn')
-          sel3.forEach((element) => {
-            element.classList.add('light-btn')
-          })
-          let sel4 = document.querySelectorAll('.sombre-fa')
-          sel4.forEach((element) => {
-            element.classList.add('light-fa')
-          })
-          let sel5 = document.querySelectorAll('.sombre-text')
-          sel5.forEach((element) => {
-            element.classList.add('light-text')
-          })
-
           setTimeout(() => {
-            sel = document.querySelectorAll('.header-light')
+            let sel = document.querySelectorAll('.header')
             sel.forEach((element) => {
-              element.classList.remove('header')
+              element.classList.add('header-light')
             })
-            sel1 = document.querySelectorAll('.sub-menu-light')
+            let sel1 = document.querySelectorAll('.sub-menu')
             sel1.forEach((element) => {
-              element.classList.remove('sub-menu')
+              element.classList.add('sub-menu-light')
             })
-            sel2 = document.querySelectorAll('.col-gray')
+            let sel2 = document.querySelectorAll('.col-white')
             sel2.forEach((element) => {
-              element.classList.remove('col-white')
+              element.classList.add('col-gray')
             })
-            sel3 = document.querySelectorAll('.light-btn')
+            let sel3 = document.querySelectorAll('.sombre-btn')
             sel3.forEach((element) => {
-              element.classList.remove('sombre-btn')
+              element.classList.add('light-btn')
             })
-            sel4 = document.querySelectorAll('.light-fa')
+            let sel4 = document.querySelectorAll('.sombre-fa')
             sel4.forEach((element) => {
-              element.classList.remove('sombre-fa')
+              element.classList.add('light-fa')
             })
-            sel5 = document.querySelectorAll('.light-text')
+            let sel5 = document.querySelectorAll('.sombre-text')
             sel5.forEach((element) => {
-              element.classList.remove('sombre-text')
+              element.classList.add('light-text')
             })
-          }, 100)
+
+            setTimeout(() => {
+              sel = document.querySelectorAll('.header-light')
+              sel.forEach((element) => {
+                element.classList.remove('header')
+              })
+              sel1 = document.querySelectorAll('.sub-menu-light')
+              sel1.forEach((element) => {
+                element.classList.remove('sub-menu')
+              })
+              sel2 = document.querySelectorAll('.col-gray')
+              sel2.forEach((element) => {
+                element.classList.remove('col-white')
+              })
+              sel3 = document.querySelectorAll('.light-btn')
+              sel3.forEach((element) => {
+                element.classList.remove('sombre-btn')
+              })
+              sel4 = document.querySelectorAll('.light-fa')
+              sel4.forEach((element) => {
+                element.classList.remove('sombre-fa')
+              })
+              sel5 = document.querySelectorAll('.light-text')
+              sel5.forEach((element) => {
+                element.classList.remove('sombre-text')
+              })
+            }, 100)
+          }, 10)
         }
       } else {
         localStorage.setItem('mode', 'dark')
@@ -145,7 +147,9 @@ button:active,
   border-color: inherit !important;
   box-shadow: none !important;
 }
-
+.bg-inherit {
+  background-color: inherit !important;
+}
 .col-white {
   color: white !important;
 }

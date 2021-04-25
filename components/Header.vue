@@ -1,7 +1,7 @@
 <template>
   <div class="header sticky top-0 z-30 w-full">
     <nav
-      class="flex items-center header border-b pb-1 px-5 py-1.2 justify-between relative z-30"
+      class="flex items-center bg-inherit border-b pb-1 px-5 py-1.2 justify-between relative z-30"
     >
       <div>
         <a href="/">
@@ -429,7 +429,7 @@ export default {
               if (localStorage.mode) localStorage.removeItem('mode')
               localStorage.setItem('mode', 'dark')
               this.busy = false
-            }, 100)
+            }, 300)
           }
         }
       }
