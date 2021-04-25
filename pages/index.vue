@@ -4,8 +4,9 @@
     <div v-show="!loading" class="sopegue max-w-460 mx-auto w-full h-full">
       <Header />
       <Afterheader />
+      <Home />
       <div class="sm:px-8 px-4">
-        <nuxt-child keep-alive :keep-alive-props="{ max: 10 }" />
+        <nuxt-child />
       </div>
       <Footer />
     </div>
@@ -109,10 +110,10 @@ export default {
 body {
   width: 100%;
   height: 100%;
-  background-color: #09232f;
+  background-color: #1f2937;
 }
 .header {
-  background-color: #09232f !important;
+  background-color: #1f2937 !important;
   border-color: white !important;
 }
 .header-light {
@@ -120,7 +121,7 @@ body {
   border-color: #e2e8f0 !important;
 }
 .sub-menu {
-  background-color: #09232f !important;
+  background-color: #1f2937 !important;
   animation: 0.2s appearx !important;
   border-color: white !important;
 }
@@ -149,7 +150,7 @@ button:active,
   color: white !important;
 }
 .col-gray {
-  color: #09232f !important;
+  color: #1f2937 !important;
 }
 .sombre-btn,
 .sombre-text {
@@ -157,18 +158,18 @@ button:active,
 }
 .light-btn,
 .light-text {
-  color: #09232f !important;
+  color: #1f2937 !important;
 }
 
 .sombre-fa .fab {
   color: #fff !important;
 }
 .light-fa .fab {
-  color: #09232f !important;
+  color: #1f2937 !important;
 }
 
 .sombre-btn:hover {
-  color: #09232f !important;
+  color: #1f2937 !important;
   background-color: rgb(255, 255, 255) !important;
   animation: 0.2s appear !important;
 }
@@ -177,16 +178,16 @@ button:active,
   animation: 0.2s appear !important;
 }
 .sombre-fa:hover .fab {
-  color: #09232f !important;
+  color: #1f2937 !important;
 }
 
 .light-btn:hover {
   color: #fff !important;
-  background-color: #09232f !important;
+  background-color: #1f2937 !important;
   animation: 0.2s appear !important;
 }
 .light-fa:hover {
-  background-color: #09232f !important;
+  background-color: #1f2937 !important;
   animation: 0.2s appear !important;
 }
 .light-fa:hover .fab {
@@ -199,7 +200,7 @@ button:active,
 }
 .light-text:hover,
 .light-text:focus {
-  color: #09232f !important;
+  color: #1f2937 !important;
 }
 .w-fit {
   width: intrinsic !important; /* Safari/WebKit utilisent un nom non-standard */
