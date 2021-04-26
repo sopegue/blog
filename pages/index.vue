@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-90 h-512">
+  <div class="min-w-90">
     <div v-show="loading"></div>
     <div v-show="!loading" class="sopegue max-w-460 mx-auto w-full h-full">
       <Header />
@@ -68,31 +68,47 @@ export default {
             sel5.forEach((element) => {
               element.classList.add('light-text')
             })
+            sel5 = document.querySelectorAll('.border-sombre')
+            sel5.forEach((element) => {
+              element.classList.add('border-lights')
+            })
+            sel5 = document.querySelectorAll('.sombre-fas')
+            sel5.forEach((element) => {
+              element.classList.add('light-fas')
+            })
 
             setTimeout(() => {
-              sel = document.querySelectorAll('.header-light')
+              sel = document.querySelectorAll('.header')
               sel.forEach((element) => {
                 element.classList.remove('header')
               })
-              sel1 = document.querySelectorAll('.sub-menu-light')
+              sel1 = document.querySelectorAll('.sub-menu')
               sel1.forEach((element) => {
                 element.classList.remove('sub-menu')
               })
-              sel2 = document.querySelectorAll('.col-gray')
+              sel2 = document.querySelectorAll('.col-white')
               sel2.forEach((element) => {
                 element.classList.remove('col-white')
               })
-              sel3 = document.querySelectorAll('.light-btn')
+              sel3 = document.querySelectorAll('.sombre-btn')
               sel3.forEach((element) => {
                 element.classList.remove('sombre-btn')
               })
-              sel4 = document.querySelectorAll('.light-fa')
+              sel4 = document.querySelectorAll('.sombre-fa')
               sel4.forEach((element) => {
                 element.classList.remove('sombre-fa')
               })
-              sel5 = document.querySelectorAll('.light-text')
+              sel5 = document.querySelectorAll('.sombre-text')
               sel5.forEach((element) => {
                 element.classList.remove('sombre-text')
+              })
+              sel5 = document.querySelectorAll('.border-sombre')
+              sel5.forEach((element) => {
+                element.classList.remove('border-sombre')
+              })
+              sel5 = document.querySelectorAll('.sombre-fas')
+              sel5.forEach((element) => {
+                element.classList.remove('sombre-fas')
               })
             }, 100)
           }, 10)
@@ -133,10 +149,13 @@ body {
   border-color: #e2e8f0 !important;
 }
 .border-sombre {
-  border-color: #fff !important;
+  border-color: #e2e8f0 !important;
 }
 .border-light {
   border-color: #e2e8f0 !important;
+}
+.border-lights {
+  border-color: #1f2937 !important;
 }
 button:focus,
 button:active,
@@ -165,10 +184,12 @@ button:active,
   color: #1f2937 !important;
 }
 
-.sombre-fa .fab {
+.sombre-fa .fab,
+.sombre-fas .fas {
   color: #fff !important;
 }
-.light-fa .fab {
+.light-fa .fab,
+.light-fas .fas {
   color: #1f2937 !important;
 }
 
@@ -197,7 +218,12 @@ button:active,
 .light-fa:hover .fab {
   color: #fff !important;
 }
-
+.w-fulls {
+  width: 100% !important;
+}
+.h-fulls {
+  height: 100% !important;
+}
 .sombre-text:hover,
 .sombre-text:focus {
   color: white !important;

@@ -338,6 +338,14 @@ export default {
               sel5.forEach((element) => {
                 element.classList.add('light-text')
               })
+              sel5 = document.querySelectorAll('.border-sombre')
+              sel5.forEach((element) => {
+                element.classList.add('border-lights')
+              })
+              sel5 = document.querySelectorAll('.sombre-fas')
+              sel5.forEach((element) => {
+                element.classList.add('light-fas')
+              })
 
               setTimeout(() => {
                 sel = document.querySelectorAll('.header')
@@ -363,6 +371,14 @@ export default {
                 sel5 = document.querySelectorAll('.sombre-text')
                 sel5.forEach((element) => {
                   element.classList.remove('sombre-text')
+                })
+                sel5 = document.querySelectorAll('.border-sombre')
+                sel5.forEach((element) => {
+                  element.classList.remove('border-sombre')
+                })
+                sel5 = document.querySelectorAll('.sombre-fas')
+                sel5.forEach((element) => {
+                  element.classList.remove('sombre-fas')
                 })
               }, 10)
             }, 300)
@@ -400,6 +416,15 @@ export default {
                 element.classList.add('sombre-text')
               })
 
+              sel5 = document.querySelectorAll('.border-lights')
+              sel5.forEach((element) => {
+                element.classList.add('border-sombre')
+              })
+              sel5 = document.querySelectorAll('.light-fas')
+              sel5.forEach((element) => {
+                element.classList.add('sombre-fas')
+              })
+
               setTimeout(() => {
                 sel = document.querySelectorAll('.header-light')
                 sel.forEach((element) => {
@@ -424,6 +449,15 @@ export default {
                 sel5 = document.querySelectorAll('.light-text')
                 sel5.forEach((element) => {
                   element.classList.remove('light-text')
+                })
+
+                sel5 = document.querySelectorAll('.border-lights')
+                sel5.forEach((element) => {
+                  element.classList.remove('border-lights')
+                })
+                sel5 = document.querySelectorAll('.light-fas')
+                sel5.forEach((element) => {
+                  element.classList.remove('light-fas')
                 })
               }, 10)
               if (localStorage.mode) localStorage.removeItem('mode')
