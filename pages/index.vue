@@ -5,7 +5,7 @@
       <Header />
       <Afterheader v-if="$route.path === '/'" />
       <Home v-if="$route.path === '/'" />
-      <div class="sm:px-8 px-4">
+      <div class="px-5">
         <nuxt-child />
       </div>
       <Footer />
@@ -42,7 +42,10 @@ export default {
       if (localStorage.mode) {
         const data = await localStorage.getItem('mode')
         if (data === 'light') {
+          this.$store.commit('set_theme', false)
           document.body.style.background = '#fff'
+          document.getElementsByTagName('html')[0].style.backgroundColor =
+            '#fff'
           setTimeout(() => {
             let sel = document.querySelectorAll('.header')
             sel.forEach((element) => {
@@ -114,6 +117,7 @@ export default {
           }, 10)
         }
       } else {
+        this.$store.commit('set_theme', true)
         localStorage.setItem('mode', 'dark')
       }
     },
@@ -125,10 +129,17 @@ export default {
 .indie {
   font-family: Indie Flower;
 }
-body {
+body,
+html {
   width: 100%;
   height: 100%;
   background-color: #1f2937;
+}
+.bg-sombre {
+  background-color: #fff !important;
+}
+.bg-light {
+  background-color: #1f2937 !important;
 }
 .header {
   background-color: #1f2937 !important;

@@ -14,28 +14,28 @@
         <ul class="flex items-center bar1">
           <li>
             <a
-              href="#"
+              href="/#aboutme"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
               >About</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="/#hobbies"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
               >Hobbies</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="/#works"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
               >Projects</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="/#achievements"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
               >Achievements</a
             >
@@ -158,28 +158,28 @@
         <ul class="flex flex-col items-center">
           <li>
             <a
-              href="/"
+              href="/#aboutme"
               class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
               >About</a
             >
           </li>
           <li>
             <a
-              href="/"
+              href="/#hobbies"
               class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
               >Hobbies</a
             >
           </li>
           <li>
             <a
-              href="/"
+              href="/#works"
               class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
               >Projects</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="/#achievements"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
               >Achievements</a
             >
@@ -309,10 +309,13 @@ export default {
         if (localStorage.mode) {
           const data = localStorage.getItem('mode')
           if (data === 'dark') {
+            this.$store.commit('set_theme', false)
             document.body.style.animation = 'none'
             setTimeout(() => {
               this.dark = false
               document.body.style.background = '#fff'
+              document.getElementsByTagName('html')[0].style.backgroundColor =
+                '#fff'
               document.body.style.animation = 'appear 0.3s'
               let sel = document.querySelectorAll('.header')
               sel.forEach((element) => {
@@ -386,11 +389,14 @@ export default {
             localStorage.setItem('mode', 'light')
             this.busy = false
           } else {
+            this.$store.commit('set_theme', true)
             document.body.style.animation = 'none'
             setTimeout(() => {
               this.dark = true
               document.body.style.animation = 'appear 0.3s'
               document.body.style.background = '#1f2937'
+              document.getElementsByTagName('html')[0].style.backgroundColor =
+                '#1f2937'
               let sel = document.querySelectorAll('.header-light')
               sel.forEach((element) => {
                 element.classList.add('header')
