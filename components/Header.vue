@@ -1,7 +1,7 @@
 <template>
-  <div class="header z-30 w-full">
+  <div class="header z-50 w-full">
     <nav
-      class="flex items-center bg-inherit border-b pb-1 px-5 py-1.2 justify-between relative z-30"
+      class="flex items-center bg-inherit border-b pb-1 px-5 py-1.2 justify-between relative z-50"
     >
       <div>
         <a href="/">
@@ -152,7 +152,7 @@
     <div
       v-show="menuing"
       id="menu"
-      class="sub-menu absolute z-20 w-full top-10 pt-4.5 pb-5 right-0 left-0 border-b"
+      class="sub-menu absolute z-40 w-full top-10 pt-4.5 pb-5 right-0 left-0 border-b"
     >
       <div class="flex flex-col items-center pt-3 space-y-4.5">
         <ul class="flex flex-col items-center">
