@@ -53,6 +53,9 @@
           </g>
         </svg>
       </span>
+      <span class="text-lg w-fit block font-semibold mx-auto sombre-text"
+        >Coming next...</span
+      >
     </div>
   </div>
 </template>
