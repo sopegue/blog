@@ -2,7 +2,7 @@
   <div class="py-15 flex flex-col space-y-5">
     <img src="/chart.png" alt="" class="mx-auto" />
     <div class="w-min mx-auto">
-      <span class="whitespace-nowrap md:text-3xl text-2xl text-white"
+      <span class="whitespace-nowrap md:text-3xl text-2xl col-white"
         >Scan me</span
       >
     </div>
