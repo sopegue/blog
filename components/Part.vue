@@ -32,7 +32,6 @@
       <span class="sombre-text block w-fit mx-auto">
         <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg">
           <g>
-            <title>background</title>
             <rect
               id="canvas_background"
               fill="none"
@@ -43,7 +42,6 @@
             />
           </g>
           <g>
-            <title>Layer 1</title>
             <path
               id="svg_1"
               stroke="null"
@@ -81,17 +79,3 @@ export default {
   },
 }
 </script>
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-}
-.appear {
-  animation: 1s appear !important;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-}
-</style>
