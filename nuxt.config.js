@@ -26,6 +26,11 @@ export default {
           "Hey, I'm Sopegue, a student, a developer, and welcome to my portfolio.",
       },
       {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Sopegue Y. SORO - Portfolio',
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
         content: 'https://sopegue.netlify.app/enjoy.png',
