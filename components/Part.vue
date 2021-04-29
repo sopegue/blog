@@ -201,7 +201,7 @@
         </a>
       </div>
       <span class="text-lg w-fit block font-semibold mx-auto sombre-text"
-        >Coming next...</span
+        >Coming next (Building my portfolio)...</span
       >
     </div>
   </div>
