@@ -254,6 +254,17 @@ button:active,
   height: -webkit-max-content !important;
   height: intrinsic !important;
 }
+@media screen and (max-width: 947px) {
+  .gaming {
+    min-width: 280px !important;
+    /* max-width: 360px !important; */
+  }
+  .gamelist {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .bar1 {
     display: none;
