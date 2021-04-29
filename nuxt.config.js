@@ -8,6 +8,28 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      { hid: 'twitter', name: 'twitter:card', content: 'summary' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://sopegue.netlify.app/',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Sopegue Yaya SORO portfolio',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          "Hey, I'm Sopegue, developer, student, son of Salimata Yeo and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://sopegue.netlify.app/enjoy.png',
+      },
     ],
     script: [
       {
@@ -48,6 +70,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/robots',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
