@@ -144,7 +144,7 @@
                 >
                   <span class="sombre-text text-center"
                     >There is also a huge community of pes 2021 player and the
-                    majority of them play offline with their friend or other
+                    majority of them play offline with their friends or other
                     people. I like play pes 2021 with my friend.</span
                   >
                 </span>
@@ -187,8 +187,8 @@
             class="hover:text-white hover:underline font-semibold"
           >
             To Kill a Mockingbird</a
-          >. It is the first book that I started reading catch interest for it.
-          I'll try to finish it, at least, I hope.
+          >. It is the first book that I started reading with interest. I'll try
+          to finish it, at least, I hope.
         </span>
         <a
           :href="objects.mockingbird.link"
