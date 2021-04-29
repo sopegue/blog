@@ -3,7 +3,7 @@ export default {
 
   head: {
     title:
-      "Hey, I'm Sopegue, developer, student, son of Salimata Yeo and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
+      "Hey, I'm Sopegue, student, developer and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,13 +17,13 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Sopegue Yaya SORO portfolio',
+        content: 'Sopoude',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          "Hey, I'm Sopegue, developer, student, son of Salimata Yeo and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
+          "Hey, I'm Sopegue, a student, a developer, and welcome to my portfolio.",
       },
       {
         hid: 'og:image',
