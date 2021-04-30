@@ -1,5 +1,5 @@
 <template>
-  <div class="header z-50 w-full">
+  <div v-click-outside="hide" class="header z-50 w-full">
     <nav
       class="flex items-center bg-inherit border-b pb-1 px-5 py-1.2 justify-between relative z-50"
     >
