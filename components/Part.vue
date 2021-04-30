@@ -8,7 +8,7 @@
       </h3>
     </div>
     <div
-      v-show="id === 'aboutme'"
+      v-if="id === 'aboutme'"
       class="flex flex-col space-y-10 lg:px-30 md:px-15"
     >
       <div
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div v-show="id === 'hobbies'" class="flex flex-col space-y-10">
+    <div v-if="id === 'hobbies'" class="flex flex-col space-y-10">
       <div>
         <span class="sombre-text block w-fit mx-auto">
           <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +92,7 @@
                       @click="copy"
                     >
                       <svg
-                        v-show="!copied"
+                        v-if="!copied"
                         class="w-6 h-6"
                         fill="none"
                         stroke="currentColor"
@@ -107,7 +107,7 @@
                         ></path>
                       </svg>
                       <svg
-                        v-show="copied"
+                        v-else
                         class="w-6 h-6"
                         fill="none"
                         stroke="currentColor"
@@ -121,17 +121,14 @@
                           d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
                         ></path>
                       </svg>
-                      <span
-                        v-show="copied"
-                        class="block absolute right-0 -mr-17"
-                      >
+                      <span v-if="copied" class="block absolute right-0 -mr-17">
                         Copied
                       </span>
                     </button>
                   </span>
                 </span>
                 <span
-                  v-show="game.title === 'Grand Theft Auto V'"
+                  v-if="game.title === 'Grand Theft Auto V'"
                   class="sombre-text flex flex-col items-center space-y-2"
                 >
                   <span class="sombre-text text-center"
@@ -141,7 +138,7 @@
                   >
                 </span>
                 <span
-                  v-show="game.title === 'Pro Evolution Soccer 2021'"
+                  v-if="game.title === 'Pro Evolution Soccer 2021'"
                   class="sombre-text flex flex-col items-center space-y-2"
                 >
                   <span class="sombre-text text-center"
@@ -440,7 +437,7 @@ l-75 -21 -45 32 c-31 22 -61 33 -95 37 -59 5 -149 -13 -174 -35 -22 -20 -23
       </div>
     </div>
 
-    <div v-show="id === 'achievements'" class="flex flex-col space-y-10">
+    <div v-if="id === 'achievements'" class="flex flex-col space-y-10">
       <span class="text-lg w-fit block font-semibold mx-auto sombre-text"
         >Coming next (Building my portfolio)...</span
       >
