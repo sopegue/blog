@@ -474,10 +474,94 @@ export default {
     }
   },
   methods: {
+    async checkDarkMode() {
+      if (localStorage.mode) {
+        const data = await localStorage.getItem('mode')
+        if (data === 'light') {
+          this.$store.commit('set_theme', false)
+          document.body.style.background = '#fff'
+          document.getElementsByTagName('html')[0].style.backgroundColor =
+            '#fff'
+          setTimeout(() => {
+            let sel = document.querySelectorAll('.header')
+            sel.forEach((element) => {
+              element.classList.add('header-light')
+            })
+            let sel1 = document.querySelectorAll('.sub-menu')
+            sel1.forEach((element) => {
+              element.classList.add('sub-menu-light')
+            })
+            let sel2 = document.querySelectorAll('.col-white')
+            sel2.forEach((element) => {
+              element.classList.add('col-gray')
+            })
+            let sel3 = document.querySelectorAll('.sombre-btn')
+            sel3.forEach((element) => {
+              element.classList.add('light-btn')
+            })
+            let sel4 = document.querySelectorAll('.sombre-fa')
+            sel4.forEach((element) => {
+              element.classList.add('light-fa')
+            })
+            let sel5 = document.querySelectorAll('.sombre-text')
+            sel5.forEach((element) => {
+              element.classList.add('light-text')
+            })
+            sel5 = document.querySelectorAll('.border-sombre')
+            sel5.forEach((element) => {
+              element.classList.add('border-lights')
+            })
+            sel5 = document.querySelectorAll('.sombre-fas')
+            sel5.forEach((element) => {
+              element.classList.add('light-fas')
+            })
+
+            setTimeout(() => {
+              sel = document.querySelectorAll('.header')
+              sel.forEach((element) => {
+                element.classList.remove('header')
+              })
+              sel1 = document.querySelectorAll('.sub-menu')
+              sel1.forEach((element) => {
+                element.classList.remove('sub-menu')
+              })
+              sel2 = document.querySelectorAll('.col-white')
+              sel2.forEach((element) => {
+                element.classList.remove('col-white')
+              })
+              sel3 = document.querySelectorAll('.sombre-btn')
+              sel3.forEach((element) => {
+                element.classList.remove('sombre-btn')
+              })
+              sel4 = document.querySelectorAll('.sombre-fa')
+              sel4.forEach((element) => {
+                element.classList.remove('sombre-fa')
+              })
+              sel5 = document.querySelectorAll('.sombre-text')
+              sel5.forEach((element) => {
+                element.classList.remove('sombre-text')
+              })
+              sel5 = document.querySelectorAll('.border-sombre')
+              sel5.forEach((element) => {
+                element.classList.remove('border-sombre')
+              })
+              sel5 = document.querySelectorAll('.sombre-fas')
+              sel5.forEach((element) => {
+                element.classList.remove('sombre-fas')
+              })
+            }, 100)
+          }, 10)
+        }
+      } else {
+        this.$store.commit('set_theme', true)
+        localStorage.setItem('mode', 'dark')
+      }
+    },
     copy() {
       if (!this.copied) {
         navigator.clipboard.writeText('Sopoude#2917')
         this.copied = true
+        this.checkDarkMode()
         setTimeout(() => {
           this.copied = false
         }, 5000)
