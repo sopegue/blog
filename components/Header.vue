@@ -1,5 +1,5 @@
 <template>
-  <div class="header z-50 w-full">
+  <div v-click-outside="hide" class="header z-50 w-full">
     <nav
       class="flex items-center bg-inherit border-b pb-1 px-5 py-1.2 justify-between relative z-50"
     >
@@ -28,16 +28,16 @@
           </li>
           <li>
             <a
-              href="/#works"
+              href="/#achievements"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
-              >Projects</a
+              >Achievements</a
             >
           </li>
           <li>
             <a
-              href="/#achievements"
+              href="/#works"
               class="text-sm button border-none bg-transparent no-outlines sombre-btn"
-              >Achievements</a
+              >Projects</a
             >
           </li>
         </ul>
@@ -172,16 +172,16 @@
           </li>
           <li>
             <a
-              href="/#works"
-              class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
-              >Projects</a
+              href="/#achievements"
+              class="text-sm button border-none bg-transparent no-outlines sombre-btn"
+              >Achievements</a
             >
           </li>
           <li>
             <a
-              href="/#achievements"
-              class="text-sm button border-none bg-transparent no-outlines sombre-btn"
-              >Achievements</a
+              href="/#works"
+              class="text-sm px-15 button border-none bg-transparent no-outlines sombre-btn"
+              >Projects</a
             >
           </li>
         </ul>
@@ -287,6 +287,9 @@ export default {
     this.checkDarkMode()
   },
   methods: {
+    hide() {
+      this.menu = false
+    },
     checkDarkMode() {
       if (localStorage.mode) {
         const data = localStorage.getItem('mode')
@@ -473,6 +476,7 @@ export default {
           }
         }
       }
+      this.menu = false
     },
   },
 }

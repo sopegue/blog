@@ -3,6 +3,7 @@
     <div class="flex flex-col space-y-10">
       <Part :id="'aboutme'" :nb="3" :contents="about" />
       <Part :id="'hobbies'" title="Hobbies" :objects="hobbies" />
+      <Part :id="'achievements'" title="Achievements" />
     </div>
   </div>
 </template>

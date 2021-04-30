@@ -8,6 +8,25 @@
       <div class="px-5">
         <nuxt-child />
       </div>
+      <button
+        v-show="scrollpos > 728"
+        class="button bg-transparent border-sombre pos-right sombre-text rounded-full sticky bottom-16.5 mr-4"
+        @click="scrolltop"
+      >
+        <svg
+          class="w-5 h-5 transform rotate-180 relative"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="clear-both"></div>
       <Footer />
     </div>
   </div>
@@ -15,9 +34,17 @@
 
 <script>
 export default {
+  data() {
+    return {
+      scrollpos: 0,
+    }
+  },
   computed: {
     loading() {
       return this.$store.state.domloading === true
+    },
+    scroll() {
+      return this.$store.state.scroll
     },
   },
   watch: {
@@ -29,12 +56,28 @@ export default {
   },
   beforeMount() {
     // this.checkDarkMode()
+    window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('DOMContentLoaded', this.domload, false)
   },
   beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
     window.removeEventListener('DOMContentLoaded', this.domload, false)
   },
   methods: {
+    scrolltop() {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      })
+    },
+    handleScroll() {
+      this.scrollpos =
+        Math.abs(window.scrollY) ||
+        Math.abs(window.scrollTop) ||
+        Math.abs(document.getElementsByTagName('html')[0].scrollTop)
+      this.$store.commit('set_Scroll', this.scrollpos)
+    },
     domload() {
       this.$store.commit('set_Domload', false)
     },
@@ -180,6 +223,9 @@ button:active,
 }
 .bg-inherit {
   background-color: inherit !important;
+}
+.pos-right {
+  float: right;
 }
 .col-white {
   color: white !important;

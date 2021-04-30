@@ -75,7 +75,6 @@
                 </figure>
               </a>
               <!-- little message -->
-              <span class="sombre-text">{{ game.content }}</span>
               <div>
                 <span
                   v-if="game.title === 'Call of Duty Warzone'"
@@ -134,7 +133,7 @@
                 >
                   <span class="sombre-text text-center"
                     >There is huge community of gta player both online and
-                    offline, unfortunately I only play GTA offline for
+                    offline, unfortunately I only play GTA V offline for
                     now.</span
                   >
                 </span>
@@ -145,7 +144,7 @@
                   <span class="sombre-text text-center"
                     >There is also a huge community of pes 2021 player and the
                     majority of them play offline with their friends or other
-                    people. I like play pes 2021 with my friend.</span
+                    people. I like play pes 2021 with my friends.</span
                   >
                 </span>
               </div>
@@ -187,8 +186,8 @@
             class="hover:text-white hover:underline font-semibold"
           >
             To Kill a Mockingbird</a
-          >. It is the first book that I started reading with interest. I'll try
-          to finish it, at least, I hope.
+          >. It is the first book that I started reading with interest. I'm
+          still reading the book and will try to finish it, at least, I hope.
         </span>
         <a
           :href="objects.mockingbird.link"
@@ -200,6 +199,245 @@
           </figure>
         </a>
       </div>
+
+      <div class="pt-10">
+        <span class="sombre-text block w-fit mx-auto">
+          <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect
+                id="canvas_background"
+                fill="none"
+                height="98"
+                width="98"
+                y="-1"
+                x="-1"
+              />
+            </g>
+            <g>
+              <path
+                id="svg_1"
+                stroke="null"
+                fill="currentColor"
+                d="m71.659143,4.812351l0,9.595143l-8.483373,0l0,-9.595143l-33.933491,0l0,9.595143l-8.483373,0l0,-9.595143l-8.483373,0l0,86.35629l8.483373,0l0,-9.595143l8.483373,0l0,9.595143l33.933491,0l0,-9.595143l8.483373,0l0,9.595143l8.483373,0l0,-86.35629l-8.483373,0zm-42.416863,67.166003l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143zm0,-19.190287l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143zm0,-19.190287l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143zm42.416863,38.380573l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143zm0,-19.190287l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143zm0,-19.190287l-8.483373,0l0,-9.595143l8.483373,0l0,9.595143z"
+              />
+            </g>
+          </svg>
+        </span>
+        <h3 class="w-fit mx-auto pb-10 col-white font-semibold">
+          Movies & Tv's Show
+        </h3>
+        <span class="sombre-text block mx-auto md:px-40 sm:px-6.5 pb-5">
+          What movie or tv show(serie) lives in your head rent free ? Well
+          definetely I'd say
+          <span class="text-sombre font-semibold">Gotham</span> which is a serie
+          about the beginning of Batman, how he ends up becoming Batman. I'm
+          almost sure you might have watched it or you definetely should try if
+          you like action movies, the movie is call
+          <span class="text-sombre font-semibold">John Wick</span>, and no I
+          won't spoil you the movie because you must savourate everything and
+          every moment in the movie in my opinion. Other than that I like
+          watching series and movies in general but with somes actions in there.
+        </span>
+      </div>
+
+      <div>
+        <span class="sombre-text block w-fit mx-auto">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="148pt"
+            height="76pt"
+            viewBox="0 0 1280.000000 720.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <metadata>
+              Created by potrace 1.15, written by Peter Selinger 2001-2017
+            </metadata>
+            <g
+              transform="translate(0.000000,720.000000) scale(0.100000,-0.100000)"
+              fill="currentColor"
+              stroke="none"
+            >
+              <path
+                d="M8284 7006 c-264 -68 -395 -131 -662 -320 l-93 -66 7 140 c6 124 5
+140 -9 140 -10 0 -31 -29 -54 -72 -32 -61 -76 -112 -267 -308 -198 -204 -240
+-252 -314 -365 -53 -81 -121 -167 -180 -229 -254 -266 -295 -391 -232 -707 24
+-116 87 -308 126 -379 34 -62 186 -226 201 -217 7 5 7 31 -2 89 -19 122 -27
+193 -21 188 2 -3 17 -64 32 -135 32 -159 41 -323 24 -448 -20 -142 -16 -261
+10 -329 39 -105 169 -218 355 -311 109 -54 487 -218 518 -224 26 -5 47 -29 47
+-52 0 -6 -17 -11 -39 -11 -69 0 -100 -18 -142 -83 -47 -72 -47 -78 -14 -284
+23 -135 24 -163 14 -212 -6 -31 -15 -63 -20 -72 -15 -30 -194 -128 -272 -149
+l-75 -21 -45 32 c-31 22 -61 33 -95 37 -59 5 -149 -13 -174 -35 -22 -20 -23
+-71 -2 -101 14 -21 14 -25 1 -40 -8 -9 -18 -32 -22 -50 -5 -27 -3 -38 14 -56
+18 -20 19 -26 9 -54 -15 -39 -6 -57 42 -89 27 -19 46 -23 113 -23 80 0 80 0
+116 39 24 25 48 40 72 45 21 4 43 14 50 23 15 17 78 47 85 40 3 -2 0 -16 -6
+-31 -13 -34 -13 -82 -1 -105 8 -15 -7 -25 -111 -77 -67 -32 -126 -64 -132 -69
+-6 -6 -54 -32 -107 -57 -115 -56 -194 -123 -209 -177 -15 -57 10 -136 89 -281
+255 -469 243 -430 185 -575 -38 -96 -41 -99 -110 -150 -129 -96 -231 -296
+-181 -356 25 -30 46 -40 135 -59 346 -76 1051 -69 1214 11 106 53 76 281 -50
+372 -154 111 -264 156 -455 183 -122 18 -128 20 -133 44 -19 88 -96 292 -188
+499 -25 57 -46 107 -46 111 0 4 21 10 46 14 38 5 49 2 62 -13 17 -19 22 -17
+226 55 151 53 213 71 226 64 48 -26 131 -135 189 -249 47 -92 66 -120 83 -123
+19 -3 33 -35 106 -243 92 -262 124 -378 142 -512 11 -81 10 -92 -9 -135 -25
+-59 -35 -111 -27 -143 9 -36 60 -47 202 -43 114 3 123 4 157 31 51 39 67 74
+67 150 0 70 -71 510 -121 750 -47 224 -46 207 -15 207 15 0 29 6 32 14 6 16
+-11 137 -57 389 -34 190 -33 213 17 271 46 54 58 102 51 216 -7 105 -26 169
+-88 298 -33 67 -39 92 -37 130 l3 47 45 -65 c37 -52 51 -65 72 -65 32 0 98
+-60 133 -120 13 -22 39 -79 58 -127 34 -82 35 -89 27 -165 -4 -43 -15 -113
+-24 -157 -30 -146 9 -331 86 -408 53 -53 78 -61 133 -42 33 11 50 12 64 4 32
+-17 83 -11 139 15 30 14 71 25 92 25 56 0 104 36 108 81 2 29 -5 46 -37 90
+-23 29 -41 56 -41 59 -1 3 -2 57 -3 120 -2 140 -15 172 -109 280 -61 70 -68
+83 -101 191 -47 150 -109 271 -194 383 -75 98 -72 92 -105 159 -36 75 -98 148
+-210 247 -157 139 -214 159 -389 136 l-66 -8 -5 31 -5 31 86 26 c131 39 347
+122 436 166 78 39 133 77 205 143 29 27 45 34 100 39 79 7 197 39 252 67 93
+47 173 152 225 296 43 118 25 206 -57 275 l-40 35 35 84 c37 92 51 102 104 75
+34 -18 61 -12 61 13 0 9 -12 52 -26 96 -29 90 -28 145 5 285 16 70 19 75 42
+72 62 -9 259 -13 259 -5 0 4 -25 21 -56 37 -102 53 -143 122 -228 377 -72 217
+-129 366 -184 477 -87 176 -335 369 -531 413 -34 7 -61 16 -61 20 0 17 129 43
+313 63 272 29 271 37 -13 93 -443 88 -562 95 -787 49 -72 -14 -153 -33 -179
+-41 -27 -8 -50 -12 -52 -10 -2 2 13 37 35 77 33 61 55 86 134 151 178 148 189
+158 189 168 0 16 -51 9 -186 -25z m-623 -6087 c145 -26 240 -58 326 -110 130
+-79 185 -157 187 -270 1 -76 -16 -94 -108 -114 -223 -48 -709 -43 -1071 10
+-137 21 -159 30 -163 72 -5 51 60 166 137 242 56 56 66 62 76 48 6 -9 24 -21
+40 -27 78 -30 327 56 393 136 15 18 36 33 48 33 11 1 72 -8 135 -20z"
+              />
+              <path
+                d="M4320 6811 c-169 -25 -616 -182 -790 -278 -353 -195 -518 -425 -711
+-989 -52 -154 -83 -277 -109 -444 -12 -74 -34 -205 -50 -290 -43 -228 -43
+-230 -34 -230 5 0 27 19 51 42 23 23 45 40 47 37 2 -2 -6 -51 -20 -109 -23
+-104 -30 -143 -60 -370 -20 -150 -22 -292 -6 -357 8 -29 17 -53 20 -53 4 0 19
+35 35 78 26 74 83 179 92 170 3 -2 11 -38 19 -80 20 -104 37 -140 98 -204 78
+-82 377 -292 399 -279 4 3 -26 55 -67 115 -41 61 -74 117 -74 126 0 9 44 -25
+103 -80 121 -113 193 -168 262 -200 64 -31 228 -87 234 -81 2 3 -17 46 -43 95
+-26 50 -42 90 -36 90 12 0 220 -138 220 -146 0 -3 -6 -17 -14 -32 -7 -15 -16
+-44 -20 -66 -5 -23 -27 -64 -57 -104 -90 -117 -164 -293 -190 -454 -22 -136 7
+-186 99 -169 l42 8 0 -41 c1 -56 25 -118 52 -136 13 -8 37 -29 53 -47 34 -35
+72 -53 115 -53 27 0 29 -3 28 -36 -1 -25 4 -41 17 -50 14 -11 16 -21 11 -55
+-4 -23 -16 -53 -27 -67 -15 -19 -19 -40 -19 -86 2 -98 -8 -237 -19 -286 -18
+-77 -15 -96 19 -110 21 -9 29 -18 26 -29 -5 -17 -51 -263 -85 -461 -44 -252
+-81 -507 -81 -559 0 -70 23 -110 82 -144 76 -44 301 -80 348 -55 36 19 36 48
+-2 120 -31 58 -33 70 -32 153 1 94 20 175 167 715 l53 194 57 29 c41 21 61 26
+70 19 9 -8 10 -59 4 -229 -10 -275 -3 -684 13 -738 28 -92 111 -132 295 -142
+96 -5 113 -4 128 11 9 10 17 23 17 29 0 7 -25 46 -56 87 l-57 75 7 120 c6 111
+21 279 46 518 5 55 13 124 16 155 8 89 13 102 33 102 41 0 43 14 40 354 -3
+251 -1 327 9 339 11 13 3 62 -46 279 l-60 263 26 48 c15 29 32 47 43 47 24 0
+28 16 34 162 l6 127 -36 23 c-26 16 -48 45 -76 101 -39 76 -39 78 -23 110 19
+38 52 66 78 67 16 0 18 -5 11 -55 -3 -30 -4 -59 0 -64 8 -13 100 41 148 87 22
+21 59 63 84 95 l45 58 40 -46 c22 -25 43 -45 47 -45 4 0 33 38 65 84 38 57 84
+108 142 157 46 39 86 70 88 68 3 -2 0 -28 -5 -57 -11 -59 1 -92 27 -71 17 14
+70 163 102 289 25 97 27 119 26 308 0 111 3 202 6 202 4 0 19 -10 34 -21 48
+-37 49 -9 4 79 -52 102 -55 150 -15 239 44 99 50 153 43 423 -6 273 -15 358
+-52 508 -80 322 -224 525 -551 781 -171 134 -356 221 -612 287 -105 27 -293
+39 -391 25z"
+              />
+            </g>
+          </svg>
+        </span>
+        <h3 class="w-fit mx-auto pb-10 col-white font-semibold">Anime</h3>
+        <span class="sombre-text block mx-auto md:px-40 sm:px-6.5 pb-5">
+          I'm sure you've heard or even are waiting for the next part of
+          <span class="text-sombre font-semibold">Attack On Titan</span> which
+          weren't released at the time I were writing this. If not it's a very
+          good anime you should try, once again I won't spoil you anything, you
+          must savourate every part. Like AOT as we use to call it or SNK for
+          some, I like watching anime and a list of few animes I watched and
+          appreciated is : Dragon Ball Z, Hunter X Hunter, Hero Academia, One
+          Pucnh Man Jujutsu Kaisen wich were released at the end of 2020. Not a
+          real geeks but I love anime with good actions.
+        </span>
+      </div>
+
+      <div class="pt-10">
+        <span class="sombre-text block w-fit mx-auto">
+          <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect
+                id="canvas_background"
+                fill="none"
+                height="98"
+                width="98"
+                y="-1"
+                x="-1"
+              />
+            </g>
+            <g>
+              <g id="svg_9" stroke="null">
+                <path
+                  id="svg_1"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m41.173862,34.819903l7.403541,7.921128l29.614165,-29.374182c-5.794076,-5.280752 -12.553831,-8.911269 -19.957372,-10.561504c-2.575145,11.221598 -8.691114,22.773242 -17.060334,32.014558z"
+                  class="st0"
+                />
+                <path
+                  id="svg_2"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m3.190477,48.681876c9.3349,-1.980282 18.991693,-6.930987 27.03902,-14.19202l-16.094655,-17.162443c-7.403541,8.911269 -10.944365,20.132866 -10.944365,31.354464z"
+                  class="st0"
+                />
+                <path
+                  id="svg_3"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m42.783328,48.021782l-7.403541,-7.921128c-9.3349,8.251175 -20.601158,14.19202 -31.545523,16.172302c1.287572,7.591081 4.506503,14.522067 9.3349,20.79296l29.614165,-29.044135z"
+                  class="st0"
+                />
+                <path
+                  id="svg_4"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m60.487448,66.504413c-7.403541,8.251175 -12.875724,18.152584 -14.807082,27.723947c10.944365,0.660094 22.210624,-2.640376 31.22363,-10.231457l-16.416548,-17.49249z"
+                  class="st0"
+                />
+                <path
+                  id="svg_5"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m83.341858,18.977647l-29.936058,29.044135l7.081648,7.591081c9.3349,-8.581222 20.923051,-14.19202 31.867417,-16.172302c-1.287572,-7.591081 -4.18461,-14.522067 -9.013007,-20.462913z"
+                  class="st0"
+                />
+                <path
+                  id="svg_6"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m19.928918,12.04666l16.094655,17.162443c7.081648,-7.921128 12.231938,-17.822537 14.807082,-27.3939c-10.944365,-0.660094 -21.888731,2.970423 -30.901737,10.231457z"
+                  class="st0"
+                />
+                <path
+                  id="svg_7"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m55.015265,60.893615l-6.759755,-7.591081l-29.614165,29.374182c5.794076,5.280752 12.553831,8.581222 19.313586,10.231457c2.575145,-11.221598 8.691114,-22.443195 17.060334,-32.014558z"
+                  class="st0"
+                />
+                <path
+                  id="svg_8"
+                  stroke="null"
+                  fill="currentColor"
+                  d="m93.320544,47.031641c-9.656793,1.980282 -19.313586,6.930987 -27.682806,14.19202l16.416548,17.49249c7.725434,-9.241316 11.588151,-20.462913 11.266258,-31.684511z"
+                  class="st0"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+        <h3 class="w-fit mx-auto pb-10 col-white font-semibold">Basketball</h3>
+        <span class="sombre-text block mx-auto md:px-40 sm:px-6.5 pb-5">
+          Last but not least, I like playing
+          <span class="text-sombre font-semibold">Basketball</span>
+          which is the first and only sport where I can say that I'm good, no
+          jokes. There is a bunch of reason why someone want to be good at sport
+          and those are generally reasons that motivates you to give everything
+          in order to succeed in it. Hmmm, I started learning playing Basketball
+          because I wanted to impress a girl and end up actually enjoying it
+          more than my first goal. I don't train like I used to but I've still
+          my hands, do not challenge me or do it.
+        </span>
+      </div>
+    </div>
+
+    <div v-if="id === 'achievements'" class="flex flex-col space-y-10">
       <span class="text-lg w-fit block font-semibold mx-auto sombre-text"
         >Coming next (Building my portfolio)...</span
       >
