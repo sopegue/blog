@@ -2,6 +2,10 @@
 
 Portfolio about me and my background
 
+# demo site
+
+[Demo here](https://sopegue.netlify.app/).
+
 ## Build Setup
 
 ```bash
