@@ -6,7 +6,7 @@
       <div>
         <a href="/">
           <span class="col-white font-semibold indie text-xl">
-            Sopegue Y. SORO</span
+            Yaya S. SORO</span
           >
         </a>
       </div>
