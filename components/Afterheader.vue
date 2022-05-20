@@ -8,7 +8,7 @@
         class="flex md:flex-row flex-col items-center md:px-30 px-10 lg:space-x-20 sm:space-x-10 md:space-y-0 space-y-10"
       >
         <figure class="image w-70 h-70 min-h-70 min-w-70 rounded-full">
-          <img class="rounded-full w-full border-4 h-full" src="/pic/3.png" />
+          <img class="rounded-full w-full border-4 h-full" src="/pic/mypic.jpg" />
         </figure>
         <div class="h-fit">
           <p>
