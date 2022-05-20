@@ -1,4 +1,6 @@
-# blog
+# My portfolio
+
+Portfolio about me and my background
 
 ## Build Setup
 
