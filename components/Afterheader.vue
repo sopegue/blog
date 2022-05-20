@@ -15,13 +15,13 @@
             <span class="text-2xl text-gray-300"
               >Hi, I'm
               <span class="text-white font-semibold indie text-2xl">
-                SOPEGUE YAYA SORO</span
+                YAYA SOPEGUE SORO</span
               >
             </span>
           </p>
           <p>
             <span class="text-2xl text-gray-300">
-              Ivorian, Student, Coder, Problem solver, Lover of web development
+              Ivorian, Student, Coder, Problem solver, Web development enthusiast
               and I express myself by doing.
             </span>
           </p>
