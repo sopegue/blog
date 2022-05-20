@@ -8,7 +8,7 @@
     </div>
     <div class="w-fit mx-auto pt-5">
       <a
-        href="/resume/resume.pdf"
+        href="/resume/dev-res.pdf"
         class="text-sm button rounded-full no-outlines bg-transparent sombre-text"
       >
         <svg
@@ -27,7 +27,7 @@
         </svg>
         Get my resume
         <a
-          href="/resume/resume.pdf"
+          href="/resume/dev-res.pdf"
           target="_blank"
           class="ml-5 sombre-text"
           title="Open the resume in a new tab"
@@ -47,7 +47,7 @@
             ></path></svg
         ></a>
         <a
-          href="/resume/resume.pdf"
+          href="/resume/dev-res.pdf"
           class="ml-3 sombre-text"
           download
           title="Download the resume"
