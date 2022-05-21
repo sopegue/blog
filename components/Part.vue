@@ -342,7 +342,7 @@ l-75 -21 -45 32 c-31 22 -61 33 -95 37 -59 5 -149 -13 -174 -35 -22 -20 -23
           must savourate every part. Like AOT as we use to call it or SNK for
           some, I like watching anime and a list of few animes I watched and
           appreciated is : Dragon Ball Z, Hunter X Hunter, Hero Academia, One
-          Pucnh Man Jujutsu Kaisen wich were released at the end of 2020. Not a
+          Punh Man, Jujutsu Kaisen wich were released at the end of 2020. Not a
           real geeks but I love anime with good actions.
         </span>
       </div>
