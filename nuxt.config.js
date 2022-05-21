@@ -33,7 +33,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://sopegue.netlify.app/enjoy.jpg',
+        content: 'https://sopegue.netlify.app/enjoy.png',
       },
     ],
     script: [
