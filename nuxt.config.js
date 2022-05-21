@@ -3,7 +3,7 @@ export default {
 
   head: {
     title:
-      "Hey, I'm Sopegue, student, developer and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
+      "Hey, I'm Yaya, student, developer and I have an obscession for exploring things that science can't prove to satisfy my curiosity",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,23 +17,23 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Sopoude',
+        content: 'Xunita',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          "Hey, I'm Sopegue, a student, a developer, and welcome to my portfolio.",
+          "Hey, I'm Yaya, a student, a developer, and welcome to my portfolio.",
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'Sopegue Y. SORO - Portfolio',
+        content: 'Yaya S. SORO - Portfolio',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://sopegue.netlify.app/enjoy.png',
+        content: 'https://sopegue.netlify.app/enjoy.jpg',
       },
     ],
     script: [
